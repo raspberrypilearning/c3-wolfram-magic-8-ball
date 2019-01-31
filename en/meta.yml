@@ -1,11 +1,14 @@
-title: c3-wolfram-magic-8-ball
+title: Magic Eight Ball
 hero_image: images/banner.png
-description: c3-wolfram-magic-8-ball description
+description:
 version: 4
 listed: false
 copyedit: false
-last_tested: "2019-01-31"
+last_tested: "2018-12-06"
 steps:
   - title: Introduction
-  - title: Step title
-  - title: What next?
+  - title: A Random Magic 8 Ball
+  - title: Adding Sentiment Analysis
+  - title: Designing the User Interface
+  - title: "Challenge: Change the responses"
+    challenge: true
