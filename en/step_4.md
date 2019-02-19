@@ -3,30 +3,21 @@
 Let's create a user interface, so that the results are presented cleanly, clearly, and interestingly.
 
 --- task ---
-Import an image of a magic 8 ball to accompany your interface.
 
+Right click on this image and save it to your desktop. Drag the image from your desktop into your notebook. If you are using a desktop version of Wolfram, or using Wolfram on a Raspberry Pi, you can drag and drop the images straight into your notebook.
 
-![Magic 8 Ball](images/8Ball.png)
+![Magic 8 Ball](images/magiceightball.png)
 
-
-Copy/paste the image into the notebook, and use `ImageResize` to resize the image so that it is a 150 pixel square.
-
-![Resize your image](images/ImageResize.png)
---- /task ---
-
---- task ---
-
-When you run the code for `ImageResize`, the output will be the resized image.
-
-Click on the resized image and assign the image to variable name `eightButton`.
+Assign the image to variable name `eightButton`.
 
 --- /task ---
+
  
 --- task ---
-Change the button to look like a magic 8 ball instead of saying 'Answer'.
-Remove the frame around the button using `Appearance->None`.
-Present your interface using `Column`.
-Make the output strings look like text instead of code using the `Text` function.
++ Change the button to look like a magic 8 ball instead of saying 'Answer'.
++ Remove the frame around the button using `Appearance->None`.
++ Present your interface using `Column`.
++ Make the output strings look like text instead of code using the `Text` function.
 
 ```
 answer = Text["Concentrate on your question"];
@@ -48,4 +39,8 @@ Column[{question = "Should I have pizza for breakfast?";
 Dynamic[Text[answer]]
 ```
 
+In order to get a new response, you need to type a new question into the `InputField` and press the button.
+
  --- /task ---
+
+Congratulations, you have made a Magic Eight Ball!

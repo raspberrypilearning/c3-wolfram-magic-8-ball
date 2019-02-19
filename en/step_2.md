@@ -21,20 +21,26 @@ negatives = {"Don't count on it.", "My reply is no.",
    
 ```
 --- /task ---
---- task ---
-
-`Join` the three lists into one list of all the possible responses.
-```
-allresponses = Join[positives, noncomittal, negatives];
-```
---- /task ---
-
 
 In order to choose a response at random, we use the `RandomChoice` function. 
 
 ```
-RandomChoice[allresponses]
+RandomChoice[positives]
 ```
+```
+RandomChoice[noncomittal]
+```
+```
+RandomChoice[negatives]
+```
+
+---task---
+`Join` all the possible responses into one list.
+
+```
+allresponses = Join[positives, noncomittal, negatives];
+```
+---/task---
 
 It would be nice if we could have a button which lets us interact better with the code.
 
