@@ -1,11 +1,11 @@
-# c3-wolfram-magic-8-ball
+# blank-template
 
-![c3-wolfram-magic-8-ball](banner.png)
+![blank-template](banner.png)
 
-Find the project online at [projects.raspberrypi.org/en/projects/c3-wolfram-magic-8-ball](https://projects.raspberrypi.org/en/projects/c3-wolfram-magic-8-ball)
+Find the project online at [projects.raspberrypi.org/en/projects/blank-template](https://projects.raspberrypi.org/en/projects/blank-template)
 
 ## Resources
-For solutions and project materials, see [en/resources](https://github.com/raspberrypilearning/c3-wolfram-magic-8-ball/tree/master/en/resources)
+For solutions and project materials, see [en/resources](https://github.com/raspberrypilearning/blank-template/tree/master/en/resources)
 
 ## Contributing
 See [CONTRIBUTING.md](CONTRIBUTING.md)
