@@ -3,15 +3,10 @@
 Let's create a user interface, so that the results are presented cleanly, clearly, and interestingly.
 
 --- task ---
-
-Right click on this image and save it to your desktop. Drag the image from your desktop into your notebook. If you are using a desktop version of Wolfram, or using Wolfram on a Raspberry Pi, you can drag and drop the images straight into your notebook.
+Drag the image below into your notebook and assign the image to variable name `eightButton`.
 
 ![Magic 8 Ball](images/magiceightball.png)
-
-Assign the image to variable name `eightButton`.
-
 --- /task ---
-
  
 --- task ---
 + Change the button to look like a magic 8 ball instead of saying 'Answer'.
@@ -40,7 +35,6 @@ Dynamic[Text[answer]]
 ```
 
 In order to get a new response, you need to type a new question into the `InputField` and press the button.
-
  --- /task ---
 
-Congratulations, you have made a Magic Eight Ball!
+Congratulations, you have made a smart Magic Eight Ball, that's sensitive to your feelings!

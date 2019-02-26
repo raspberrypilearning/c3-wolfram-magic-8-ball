@@ -15,12 +15,11 @@ title: What you will need
 ---
 ### Hardware
 
-+ Either a desktop computer, laptop, or a Raspberry Pi
++ A computer: desktop, laptop, or a Raspberry Pi
 
 ### Software
 
-+ Wolfram Language
-+ This project can be completed in a web browser using [wolframcloud.com](http://lab.wolframcloud.com/app/). Log in, and click Create New Notebook.
++ Wolfram Language — this is available for free on the Raspberry Pi as part of NOOBS
 
 --- /collapse ---
 
@@ -32,8 +31,6 @@ title: What you will learn
 + Using Sentiment Analysis to choose outputs
 + Using buttons and input fields to add interactivity
 + Manipulating lists
-
-If you have never used the Wolfram Language before, follow [this guide](https://projects.raspberrypi.org/en/projects/getting-started-with-mathematica). You'll need to look at Starting Mathematica and Programming in Mathematica. If you are using the web browser version of Wolfram, you only need to look at Programming in Mathematica.
 
 --- /collapse ---
 
