@@ -16,19 +16,17 @@ Drag the image below into your notebook and assign the image to variable name `e
 
 ```
 answer = Text["Concentrate on your question"];
-Column[{question = "Should I have pizza for breakfast?";
-  InputField[Dynamic[question], String], 
+Column[{question = "Will I get home for Christmas?";
+  InputField[Dynamic[question], String],
   Button[eightButton,
-   Dynamic[
     Which[
-     Classify["Sentiment", question] == "Negative", 
+     Classify["Sentiment", question] == "Negative",
      answer = RandomChoice[negatives],
-     Classify["Sentiment", question] == "Neutral", 
-     answer = RandomChoice[noncomittal], 
-     Classify["Sentiment", question] == "Positive", 
+     Classify["Sentiment", question] == "Neutral",
+     answer = RandomChoice[noncomittal],
+     Classify["Sentiment", question] == "Positive",
      answer = RandomChoice[positives]
-     ]
-    ],
+     ],
    Appearance -> None]
   }]
 Dynamic[Text[answer]]

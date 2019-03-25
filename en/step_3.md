@@ -56,14 +56,13 @@ Add this `Which` statement into the `InputField` and `Button` interface.
  answer = "Concentrate on your question";
 {InputField[Dynamic[question], String], 
  Button["Answer",
-  Dynamic[Which[
- Classify["Sentiment", question] == "Negative", 
- answer = RandomChoice[negatives], 
- Classify["Sentiment", question] == "Neutral", 
- answer = RandomChoice[noncomittal], 
- Classify["Sentiment", question] == "Positive", 
- answer = RandomChoice[positives]]
-   ]
+  Which[
+    Classify["Sentiment", question] == "Negative", 
+    answer = RandomChoice[negatives], 
+    Classify["Sentiment", question] == "Neutral", 
+    answer = RandomChoice[noncomittal], 
+    Classify["Sentiment", question] == "Positive", 
+    answer = RandomChoice[positives]]
   ]}
 Dynamic[answer]
 ```
