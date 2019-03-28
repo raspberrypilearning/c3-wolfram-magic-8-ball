@@ -1,4 +1,4 @@
-title: Magic Eight Ball
+title: Magic 8 Ball
 hero_image: images/banner.png
 description:
 version: 4
@@ -7,8 +7,8 @@ copyedit: false
 last_tested: "2018-12-06"
 steps:
   - title: Introduction
-  - title: A Random Magic 8 Ball
-  - title: Adding Sentiment Analysis
-  - title: Designing the User Interface
+  - title: Make a Magic 8 Ball which gives responses at random
+  - title: Add sentiment analysis
+  - title: Design the user interface
   - title: "Challenge: Change the responses"
     challenge: true
