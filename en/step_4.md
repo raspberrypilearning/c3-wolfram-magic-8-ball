@@ -1,6 +1,6 @@
-## Designing the User Interface
+## Design the user interface
 
-Let's create a user interface, so that the results are presented cleanly, clearly, and interestingly.
+Now, create a user interface, so that the display is clean, clear, and interesting.
 
 --- task ---
 Drag the image below into your notebook and assign the image to variable name `eightButton`.
@@ -9,10 +9,11 @@ Drag the image below into your notebook and assign the image to variable name `e
 --- /task ---
  
 --- task ---
-+ Change the button to look like a magic 8 ball instead of saying 'Answer'.
-+ Remove the frame around the button using `Appearance->None`.
-+ Present your interface using `Column`.
-+ Make the output strings look like text instead of code using the `Text` function.
++ Change the button so that it looks like a Magic 8 Ball, instead of it saying 'Answer'.
++ Use `Appearance->None` to remove the frame around the button.
++ Use `Column` to present your interface.
++ Use the `Text` function to make the output strings look like text instead of code.
+You can use the following code to do this.
 
 ```
 answer = Text["Concentrate on your question"];
@@ -23,7 +24,7 @@ Column[{question = "Will I get home for Christmas?";
      Classify["Sentiment", question] == "Negative",
      answer = RandomChoice[negatives],
      Classify["Sentiment", question] == "Neutral",
-     answer = RandomChoice[noncomittal],
+     answer = RandomChoice[noncommittal],
      Classify["Sentiment", question] == "Positive",
      answer = RandomChoice[positives]
      ],
@@ -32,7 +33,8 @@ Column[{question = "Will I get home for Christmas?";
 Dynamic[Text[answer]]
 ```
 
-In order to get a new response, you need to type a new question into the `InputField` and press the button.
+To get a new response, the user needs to type a new question into the `InputField` and press the button.
+
  --- /task ---
 
-Congratulations, you have made a smart Magic Eight Ball, that's sensitive to your feelings!
+Congratulations, you have made a smart Magic 8 Ball, which takes the user's feelings into account!
