@@ -45,7 +45,7 @@ allresponses = Join[positives, noncommittal, negatives];
 ```
 ---/task---
 
-To make the ouput nicer to use, create a button which lets the user interact better with the code. Use the following line of code to do this.
+To make the Magic 8 Ball nicer to use, create a button which lets the user run the code again. Use the following line of code to do this.
 
 ```
 Button["Ask Again", Print[RandomChoice[allresponses]]]
