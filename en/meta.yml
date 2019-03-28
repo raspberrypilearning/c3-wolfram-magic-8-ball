@@ -7,7 +7,7 @@ copyedit: false
 last_tested: "2018-12-06"
 steps:
   - title: Introduction
-  - title: Make a Magic 8 Ball which gives responses at random
+  - title: Make a Magic 8 Ball which gives answers at random
   - title: Add sentiment analysis
   - title: Design the user interface
   - title: "Challenge: Change the responses"
