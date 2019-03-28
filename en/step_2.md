@@ -4,7 +4,7 @@
 If you have never used the Wolfram Language before, follow [this guide to get started](https://projects.raspberrypi.org/en/projects/getting-started-with-mathematica) and learn to use the tool. Look at the sections **Starting Mathematica** and **Programming in Mathematica**.
 --- /task ---
 
-In this project, you will create a Magic 8 Ball, which will give an answer which is randomly selected from a list of possible answers when the user pushes a button.
+In this project, you will create a Magic 8 Ball, which will give an answer which is randomly selected from a list of possible answers, when the user pushes a button.
 
 --- task ---
 Use the following code to create three lists of possible responses: a positive list, a negative list, and a neutral/non-committal list.
