@@ -33,7 +33,7 @@ Which[
  Classify["Sentiment", question] == "Negative", 
  answer = RandomChoice[negatives], 
  Classify["Sentiment", question] == "Neutral", 
- answer = RandomChoice[noncomittal], 
+ answer = RandomChoice[noncommittal], 
  Classify["Sentiment", question] == "Positive", 
  answer = RandomChoice[positives]]
  ```
@@ -60,7 +60,7 @@ Add this `Which` statement into the `InputField` and `Button` interface.
     Classify["Sentiment", question] == "Negative", 
     answer = RandomChoice[negatives], 
     Classify["Sentiment", question] == "Neutral", 
-    answer = RandomChoice[noncomittal], 
+    answer = RandomChoice[noncommittal], 
     Classify["Sentiment", question] == "Positive", 
     answer = RandomChoice[positives]]
   ]}
