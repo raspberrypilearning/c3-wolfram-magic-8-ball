@@ -1,3 +1,3 @@
 ## Challenge: Change the responses
 
-Change how the magic 8 ball responds to user input in your `Which` statement. Maybe if we classify an input as negative, the ball should respond positively to try to cheer them up?
+Change how the Magic 8 Ball responds to user input in your `Which` statement. Maybe if an input seems negative, the ball should give a positive answer to try to cheer them up!
