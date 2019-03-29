@@ -13,6 +13,7 @@ Drag the image below into your notebook and assign the image to variable name `e
 + Use `Appearance->None` to remove the frame around the button.
 + Use `Column` to present your interface.
 + Use the `Text` function to make the output strings look like text instead of code.
+
 You can use the following code to do this.
 
 ```
