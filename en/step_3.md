@@ -9,7 +9,7 @@ Wolfram has a sentiment classifier built in. You can input a phrase or sentence,
 --- task ---
 Make an `InputField` so that the user can put in their question, and make a `Button` to deliver a response. Keep the response random for now.
 
-``` 
+```
 answer = "Concentrate on your question";
 {InputField[Dynamic[question], String], 
  Button["Answer",
