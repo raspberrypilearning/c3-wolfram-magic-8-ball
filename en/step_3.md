@@ -23,7 +23,7 @@ Dynamic[answer]
 
 Next, make a `Which` statement to choose a response based on the sentiment analysis. Sentiment analysis lets the computer guess the kind of feelings expressed in a piece of text. If the sentiment is positive, the Magic 8 Ball should return a positive statement, if the sentiment is negative, it should return a negative statement, and if the sentiment is neutral, it should return a non-committal statement.
 
-If you are familiar with other programming languages, you might notice that a `Which` statement is similar to an If, Else statement. `Which` takes a series of options, and instructions for what to do when each option is selected. It will return the outcome of the first possibility which returns True.
+If you are familiar with other programming languages, you might notice that a `Which` statement is similar to an `If, Else` statement. `Which` checks multiple conditions for whether they are `True`, and returns a specific output depending on which is the `True` condition. If the first condition is `True`, `Which` returns the output for that condition. If the second condition is `True`, `Which` returns the output for that condition, and so on, until `Which` has checked all conditions.
 
  --- task ---
 Create a `Which` statement which returns a random negative response to a question showing a negative sentiment, a random non-committal response to a question showing a neutral sentiment, and a random positive response to a question showing a positive sentiment.
