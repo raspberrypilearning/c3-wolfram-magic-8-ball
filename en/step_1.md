@@ -4,10 +4,7 @@ In this project, you will create a Magic 8 Ball which can read minds! Well, not 
 
 ### What you will make
 
-
---- print-only ---
 ![Complete project](images/Complete.png)
---- /print-only ---
 
 --- collapse ---
 ---
