@@ -1,13 +1,13 @@
-## Adding Sentiment Analysis
+## Add sentiment analysis
 
-Sentiment analysis is the attempt to classify 'happy' words and 'sad words' in a sentence, and then work out if the emotional tone behind the sentence was positive, negative or neutral.
-Wolfram has a sentiment classifier built in. You can input a phrase or sentence, and it will classify the text as generally positive, negative or neutral.
+Sentiment analysis is the attempt to recognise 'happy' words and 'sad' words in a sentence, and then work out if the feeling behind the sentence is positive, negative, or neutral.
+Wolfram has a sentiment classifier built in. You can input a phrase or sentence, and it will classify the text as generally positive, negative, or neutral.
 
 ![positive, negative and neutral responses to sentiment analysis](images/Sentiment.png)
 
 
 --- task ---
-Make an `InputField` so that users can input their question, and a `Button` to deliver a response. Keep the response random for now.
+Make an `InputField` so that the user can put in their question, and make a `Button` to deliver a response. Keep the response random for now.
 
 ```
 answer = "Concentrate on your question";
@@ -21,26 +21,26 @@ Dynamic[answer]
 ```
 --- /task ---
 
-Now let's build a a `Which` statement to choose a response based on the sentiment analysis. Sentiment analysis lets the computer guess the kind of feelings expressed in a piece of text. If the sentiment is positive, we want our magic 8 ball to return a positive statement, if the sentiment is negative, we want the magic 8 ball to return a negative statement, and if the sentiment is neutral, we want to return a noncommital statement.
+Next, make a `Which` statement to choose a response based on the sentiment analysis. Sentiment analysis lets the computer guess the kind of feelings expressed in a piece of text. If the sentiment is positive, the Magic 8 Ball should return a positive statement, if the sentiment is negative, it should return a negative statement, and if the sentiment is neutral, it should return a non-committal statement.
 
-If you’re familiar with other programming languages you might notice that a `Which` statement is similar to an If, Else statement. `Which` takes a series of possibilities, and instructions for what to do if that possibility is true. It will return the outcome of the first possibility which returns True.
+If you are familiar with other programming languages, you might notice that a `Which` statement is similar to an `If, Else` statement. `Which` checks multiple conditions for whether they are `True`, and returns a specific output depending on which is the `True` condition. If the first condition is `True`, `Which` returns the output for that condition. If the second condition is `True`, `Which` returns the output for that condition, and so on, until `Which` has checked all conditions.
 
  --- task ---
-Build a `Which` statement which returns a random negative response to a negative sentiment question, a noncomittal response to a neutral sentiment question, and a positive response to a positive sentiment question.
+Create a `Which` statement which returns a random negative response to a question showing a negative sentiment, a random non-committal response to a question showing a neutral sentiment, and a random positive response to a question showing a positive sentiment.
  
  ```
 Which[
  Classify["Sentiment", question] == "Negative", 
  answer = RandomChoice[negatives], 
  Classify["Sentiment", question] == "Neutral", 
- answer = RandomChoice[noncomittal], 
+ answer = RandomChoice[noncommittal], 
  Classify["Sentiment", question] == "Positive", 
  answer = RandomChoice[positives]]
  ```
  --- /task ---
 
 --- task ---
- Test the `Which` statement with a few different questions to check that it is giving positive, negative or neural responses.
+ Test the `Which` statement with a few different questions to check that it is giving positive, negative, or neutral responses. If you like, you can use these questions, or you can think of your own.
  
  ```question = "Do I love puppies?"```
  
@@ -56,19 +56,18 @@ Add this `Which` statement into the `InputField` and `Button` interface.
  answer = "Concentrate on your question";
 {InputField[Dynamic[question], String], 
  Button["Answer",
-  Dynamic[Which[
- Classify["Sentiment", question] == "Negative", 
- answer = RandomChoice[negatives], 
- Classify["Sentiment", question] == "Neutral", 
- answer = RandomChoice[noncomittal], 
- Classify["Sentiment", question] == "Positive", 
- answer = RandomChoice[positives]]
-   ]
+  Which[
+    Classify["Sentiment", question] == "Negative", 
+    answer = RandomChoice[negatives], 
+    Classify["Sentiment", question] == "Neutral", 
+    answer = RandomChoice[noncommittal], 
+    Classify["Sentiment", question] == "Positive", 
+    answer = RandomChoice[positives]]
   ]}
 Dynamic[answer]
 ```
 --- /task ---
 
 --- task ---
-Test it out! You will need to change the question in the InputField box, and press the button, in order to change the answer.
+Now, test it out! You will need to change the question in the `InputField` box, and press the button, in order to change the answer.
 --- /task ---

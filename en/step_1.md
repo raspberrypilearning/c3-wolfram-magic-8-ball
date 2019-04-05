@@ -1,6 +1,6 @@
 ## Introduction
 
-In this project, you will build a magic 8 ball which can predict the future! Well, not exactly. But you can make people think you're predicting the future. You will build a simple magic 8 ball which simply returns a randomly selected answer, and then you'll incorporate some sentiment analysis to give the user the kind of answer they're hoping for.
+In this project, you will create a Magic 8 Ball which can read minds! Well, not exactly. But you can make the user think that it is reading their mind. You will build a simple Magic 8 Ball which returns a randomly selected answer, and then you will add in some sentiment analysis to give the user the kind of answer they're hoping for.
 
 ### What you will make
 
@@ -19,7 +19,7 @@ title: What you will need
 
 ### Software
 
-+ Wolfram Language — this is available for free on the Raspberry Pi as part of NOOBS
++ Wolfram Language, available for free on the Raspberry Pi as part of the official operating system, Raspbian
 
 --- /collapse ---
 
@@ -28,9 +28,9 @@ title: What you will need
 title: What you will learn
 ---
 
-+ Using Sentiment Analysis to choose outputs
-+ Using buttons and input fields to add interactivity
-+ Manipulating lists
++ How to use Sentiment Analysis to choose outputs
++ How to use buttons and input fields to add interactivity
++ How to manipulate lists
 
 --- /collapse ---
 
