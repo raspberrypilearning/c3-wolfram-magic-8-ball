@@ -1,17 +1,19 @@
 ---
 title: Sentimental 8-ball
 hero_image: images/banner.png
-description:
+description: 
 version: 4
 listed: true
 copyedit: true
 last_tested: '2018-12-06'
 steps:
 - title: Introduction
-  completion: engaged
 - title: Make a Magic 8 Ball which gives answers at random
 - title: Add sentiment analysis
-  completion: internal
+  completion:
+  - engaged
 - title: Design the user interface
+  completion:
+  - internal
 - title: 'Challenge: Change the responses'
   challenge: true
